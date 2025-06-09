@@ -43,6 +43,27 @@ function Main() {
         ))}
         <img src={bgQuotes} className="absolute -top-6 h-6" />
       </ul>
+      <div className="mt-20 bg-[#1b2230] px-4 py-8 flex flex-col items-center">
+        <p className="text-white text-xl font-bold text-center">
+          Get early access today
+        </p>
+        <p className="text-gray-200 text-center mt-4">
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+        <div>
+          <label htmlFor="email" className="sr-only">Email Adress</label>
+          <input 
+            className="rounded-full bg-white px-6 py-4 mt-6 mb-4 "
+            type="email" placeholder="email@example.com" id="email"
+            required
+          />
+        </div>
+        <button className="bg-gradient-to-r from-teal-200 to-cyan-500
+          text-white px-16 py-4 mt-2 rounded-full cursor-pointer">
+          Get Started For Free
+        </button>
+      </div>
     </main>
    )
 }
