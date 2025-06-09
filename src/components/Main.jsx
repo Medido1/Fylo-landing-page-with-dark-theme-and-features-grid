@@ -1,7 +1,9 @@
-import { features } from "../../data"; 
+import { features, testimonials} from "../../data"; 
 import Feature from "./Feature";
 import stayProductive from "../assets/images/illustration-stay-productive.png";
 import arrowIcon from "../assets/images/icon-arrow.svg";
+import Testimonial from "./Testimonial";
+import bgQuotes from "../assets/images/bg-quotes.png"
 
 function Main() {
    return (
@@ -35,6 +37,12 @@ function Main() {
           className="h-0.5 bg-cyan-300 w-[46%]">
         </div>
       </a>
+      <ul className="relative flex flex-col gap-8 mt-20">
+        {testimonials && testimonials.map(item => (
+          <Testimonial key={item.id} data={item}/>
+        ))}
+        <img src={bgQuotes} className="absolute -top-6 h-6" />
+      </ul>
     </main>
    )
 }
