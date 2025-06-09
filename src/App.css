@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.font-raleway { /* Headings, Call-to-actions, Header Navigation */
+  font-family: "Raleway", sans-serif;
+}
