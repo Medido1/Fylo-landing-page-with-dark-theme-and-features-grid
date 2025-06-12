@@ -1,7 +1,7 @@
 function Testimonial({data}) {
   const {text, avatar, name, jobTitle} = data
   return (
-    <div className="px-4 py-8 bg-[#212733]">
+    <div className="px-4 py-8 bg-[#212733] max-w-[330px]">
       <p className="text-gray-200 text-sm mb-4">
         {text}
       </p>
