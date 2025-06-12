@@ -10,9 +10,9 @@ function Header() {
           className="h-6"
           src={logo} alt="log" />
         <div className="flex gap-4 text-gray-200">
-          <a href="#">Features</a>
-          <a href="#">Team</a>
-          <a href="#">Sign In</a>
+          <a href="#" className="hover:underline hover:font-bold">Features</a>
+          <a href="#" className="hover:underline hover:font-bold">Team</a>
+          <a href="#" className="hover:underline hover:font-bold">Sign In</a>
         </div>
       </div>
       <img 
@@ -27,8 +27,9 @@ function Header() {
           you need, share and collaborate with friends family, and co-workers.
         </p>
       </div>
-      <button className="block mx-auto mt-8 px-18 py-2 rounded-full text-white
-        bg-gradient-to-r from-teal-200 to-cyan-500">
+      <button className="block mx-auto mt-8 px-18 py-2 lg:py-4 rounded-full text-white
+        bg-gradient-to-r from-teal-200 to-cyan-500 cursor-pointer
+      hover:from-teal-400 hover:to-cyan-700">
         Get Started
       </button>
     </header>
